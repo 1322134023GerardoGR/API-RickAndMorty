@@ -37,9 +37,8 @@
             </div>
         </div>
     </nav>
-    <h1>Lugares de Rick and Morty</h1>
+    <h1>Episodios de Rick and Morty</h1>
 </header>
-<h2 >Lugares aleatorios</h2>
 <main class="align-items-center">
     <?php
     try {
