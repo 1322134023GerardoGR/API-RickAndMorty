@@ -14,8 +14,10 @@
 <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">RICK AND MORTY</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="https://rickandmortyapi.com/">RICK AND MORTY</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -42,7 +44,8 @@
 <div class="container">
     <div class="row align-items-start">
         <div class="col">
-            <img src="https://m.media-amazon.com/images/I/91MteSqsrJL._AC_UF894,1000_QL80_.jpg" alt="Rick and Morty">
+            <img src="https://m.media-amazon.com/images/I/91MteSqsrJL._AC_UF894,1000_QL80_.jpg"
+                 alt="Rick and Morty">
         </div>
         <div class="col">
             <a href='Characters.php?species=' class="btn btn-info">Personajes</a>

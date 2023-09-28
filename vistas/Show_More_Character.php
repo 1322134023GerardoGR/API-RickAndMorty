@@ -14,8 +14,10 @@
 <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">RICK AND MORTY</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="https://rickandmortyapi.com/">RICK AND MORTY</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -83,14 +85,17 @@ function printHTML($character): void
 {
     try{
         echo '<div class="container">';
-        echo '<img src="'.$character["image"].'" id="img" class="card-img-top" alt="Imagen de '.$character["name"].'">';
+        echo '<img src="'.$character["image"].'" id="img" class="card-img-top" alt="Imagen de '
+            .$character["name"].'">';
         echo '<div class="card-body">';
         echo '<h2 class="card-title" id="nombre">Nombre: '.$character["name"].'</h2>';
         echo '<p class="card-text" id="especie">Especie: '.$character["species"].'</p>';
         echo '<p class="card-text" id="genero">Genero: '.$character["gender"].'</p>';
         echo '<p class="card-text" id="estado">Estado: '.$character["status"].'</p>';
         echo '<p class="card-text" id="origen">Lugar de origen: '.$character["origin"]["name"].'</p>';
-        echo '<p class="card-text" id="ubicacion">Visto por ultima vez en: '.$character["location"]["name"].'</p>';
+        echo '<p class="card-text" id="ubicacion">Visto por ultima vez en: '
+            .$character["location"]["name"]
+            .'</p>';
         echo '</div>';
         echo '</div>';
     }catch (Exception $e){

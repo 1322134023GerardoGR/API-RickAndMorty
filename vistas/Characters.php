@@ -15,7 +15,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">RICK AND MORTY</a>
+            <a class="navbar-brand" href="https://rickandmortyapi.com/">RICK AND MORTY</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -42,18 +42,29 @@
     </nav>
     <h1>Personajes de Rick and Morty</h1>
 </header>
-<a href="Characters.php?species=" type="button" class="btn btn-outline-info" id="All">All</a>
-<a href="Characters.php?species=Human" type="button" class="btn btn-outline-info" id="Human">Human</a>
-<a href="Characters.php?species=Alien" type="button" class="btn btn-outline-info" id="Alien">Alien</a>
-<a href="Characters.php?species=Humanoid" type="button" class="btn btn-outline-info" id="Humanoid">Humanoid</a>
-<a href="Characters.php?species=unknown" type="button" class="btn btn-outline-info" id="unknown">unknown</a>
-<a href="Characters.php?species=Poopybutthole" type="button" class="btn btn-outline-info" id="Poopybutthole">Poopybutthole</a>
-<a href="Characters.php?species=MythologicalCreature" type="button" class="btn btn-outline-info"
+<a href="Characters.php?species=" type="button"
+   class="btn btn-outline-info" id="All">All</a>
+<a href="Characters.php?species=Human" type="button"
+   class="btn btn-outline-info" id="Human">Human</a>
+<a href="Characters.php?species=Alien" type="button"
+   class="btn btn-outline-info" id="Alien">Alien</a>
+<a href="Characters.php?species=Humanoid" type="button"
+   class="btn btn-outline-info" id="Humanoid">Humanoid</a>
+<a href="Characters.php?species=unknown" type="button"
+   class="btn btn-outline-info" id="unknown">unknown</a>
+<a href="Characters.php?species=Poopybutthole" type="button"
+   class="btn btn-outline-info" id="Poopybutthole">Poopybutthole</a>
+<a href="Characters.php?species=MythologicalCreature" type="button"
+   class="btn btn-outline-info"
    id="MythologicalCreature">Mythological Creature</a>
-<a href="Characters.php?species=Animal" type="button" class="btn btn-outline-info" id="Animal">Animal</a>
-<a href="Characters.php?species=Robot" type="button" class="btn btn-outline-info" id="Robot">Robot</a>
-<a href="Characters.php?species=Cronenberg" type="button" class="btn btn-outline-info" id="Cronenberg">Cronenberg</a>
-<a href="Characters.php?species=Disease" type="button" class="btn btn-outline-info" id="Disease">Disease</a>
+<a href="Characters.php?species=Animal" type="button"
+   class="btn btn-outline-info" id="Animal">Animal</a>
+<a href="Characters.php?species=Robot" type="button"
+   class="btn btn-outline-info" id="Robot">Robot</a>
+<a href="Characters.php?species=Cronenberg" type="button"
+   class="btn btn-outline-info" id="Cronenberg">Cronenberg</a>
+<a href="Characters.php?species=Disease" type="button"
+   class="btn btn-outline-info" id="Disease">Disease</a>
 
 <main class="align-items-center">
     <?php
@@ -144,7 +155,8 @@ function printHTMl($characters): void
         echo "<h2>Nombre: ".$character['name']."</h2>";
         echo "<h4>Estado: ".$character['status']."</h4>";
         echo "<h4>Especie: ".$character['species']."</h4>";
-        echo '<a href="Show_More_Character.php?id='.$character["id"].'" type="button" class="btn btn-outline-info" id="'.$character['id'].'">Info</a>';
+        echo '<a href="Show_More_Character.php?id='.$character["id"].'" type="button"
+         class="btn btn-outline-info" id="'.$character['id'].'">Info</a>';
         echo "</article>";
     }
 }

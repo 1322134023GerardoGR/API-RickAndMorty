@@ -14,8 +14,10 @@
 <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">RICK AND MORTY</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="https://rickandmortyapi.com/">RICK AND MORTY</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -45,7 +47,7 @@
         $ch = curl_init();
         $cant = infoApi($ch);
         $ids = stringIds($cant);
-        $episodes=[];
+        $episodes = [];
         $url = "https://rickandmortyapi.com/api/episode/".$ids;
         $response = ApiConnect($ch, $url);
         if (curl_errno($ch)) {
@@ -123,7 +125,9 @@ function printHTMl($episodes): void
         echo "<h2>Nombre: ".$episode['name']."</h2>";
         echo "<h4>Fecha de lanzamiento: ".$episode['air_date']."</h4>";
         echo "<h4>Nomenclatura: ".$episode['episode']."</h4>";
-        echo '<a href="Show_People_Episodes.php?id_episode='.$episode["id"].'" type="button" class="btn btn-outline-info" id="'.$episode['id'].'">People</a>';
+        echo '<a href="Show_People_Episodes.php?id_episode='.$episode["id"]
+            .'" type="button" class="btn btn-outline-info" id="'.$episode['id'].'">
+             People</a>';
         echo "</article>";
     }
 }

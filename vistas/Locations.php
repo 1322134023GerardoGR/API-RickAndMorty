@@ -14,8 +14,10 @@
 <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">RICK AND MORTY</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="https://rickandmortyapi.com/">RICK AND MORTY</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -123,7 +125,9 @@ function printHTMl($locations): void
         echo "<h2>Nombre: ".$location['name']."</h2>";
         echo "<h4>Tipo: ".$location['type']."</h4>";
         echo "<h4>Dimension: ".$location['dimension']."</h4>";
-        echo '<a href="Show_People_Location.php?id_location='.$location["id"].'" type="button" class="btn btn-outline-info" id="'.$location['id'].'">People</a>';
+        echo '<a href="Show_People_Location.php?id_location='.$location["id"]
+            .'" type="button" class="btn btn-outline-info" id="'
+            .$location['id'].'">People</a>';
         echo "</article>";
     }
 }

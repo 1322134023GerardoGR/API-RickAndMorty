@@ -14,8 +14,10 @@
 <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">RICK AND MORTY</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="https://rickandmortyapi.com/">RICK AND MORTY</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -113,7 +115,8 @@ function printHTMl($characters): void
         echo "<h2>Nombre: ".$character['name']."</h2>";
         echo "<h4>Estado: ".$character['status']."</h4>";
         echo "<h4>Especie: ".$character['species']."</h4>";
-        echo '<a href="Show_More_Character.php?id='.$character["id"].'" type="button" class="btn btn-outline-info" id="'.$character['id'].'">Info</a>';
+        echo '<a href="Show_More_Character.php?id='.$character["id"].'" type="button" 
+        class="btn btn-outline-info" id="'.$character['id'].'">Info</a>';
 
         echo "</article>";
     }
